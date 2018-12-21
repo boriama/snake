@@ -8,10 +8,10 @@ namespace snake
 {
     class Program
     {
-        static void Draw(int x,int y,string sim)
+        static void Draw(int x,int y,char sim)
         {
             Console.SetCursorPosition(x, y);
-            Console.WriteLine(sim);
+            Console.Write(sim);
         }
         static void Main(string[] args)
         {
