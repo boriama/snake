@@ -12,6 +12,17 @@ namespace snake
         public int y;
         public char sim;
 
+        public void Reset(Point p )
+        {
+            p = new Point(0,0,'0');
+        }
+
+        public void Mowe(Point p, int dx, int dy )
+        {
+            p.x = p.x + dx;
+            p.y = p.y + dy;
+        }
+
         public Point(int _x,int _y,char _sim )
         {
             x = _x;
