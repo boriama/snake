@@ -11,8 +11,11 @@ namespace snake
        
         static void Main(string[] args)
         {
-            Point p1 = new Point(5,6,'#');
-            p1.Draw();
+
+           HorisontalLine line = new  HorisontalLine(5, 10, 7,'$');
+            line.Drow();
+
+
             Console.ReadLine();
         }
     }
