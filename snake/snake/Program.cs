@@ -12,11 +12,17 @@ namespace snake
         static void Main(string[] args)
         {
 
-           HorisontalLine lineH = new  HorisontalLine(5, 10, 7,'$');
-            lineH.Drow();
-            VerticalLines lineV = new VerticalLines(6, 5, 10, '@');
-            lineV.Drow();
+            
 
+
+            HorisontalLine upLine = new HorisontalLine(0, 78, 0, '+');
+            HorisontalLine downLine = new HorisontalLine(0, 78, 24, '+');
+            VerticalLines rightLine = new VerticalLines(0, 0, 24, '+');
+            VerticalLines leftLine = new VerticalLines(78, 0, 24, '+');
+            upLine.Drow();
+            downLine.Drow();
+            rightLine.Drow();
+            leftLine.Drow();
             Console.ReadLine();
         }
     }
